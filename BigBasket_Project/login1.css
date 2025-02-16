@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+
+body{
+    background-color: rgb(234, 255, 232);
+    background-image: radial-gradient(rgb(3, 201, 136), rgb(0, 21, 36));
+    margin-top: 5%;
+    margin-left: 280px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.container3{
+    width: 50em;
+    height: 30em ;
+    position: relative;
+    margin: 0 5em;
+    background-color: #4ea001;
+    background-image: radial-gradient(rgb(158, 179, 132), rgb(0, 21, 36));
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+    
+}
+
+.subcont2{
+    width: 30em;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 20%;
+    border: 8px;
+}
+h1{
+    color:white;
+}
+#mail, #pass{
+    background-color: white;
+    padding:10px;
+    height: 4.5%;
+    width: 300px;
+    border-radius: 5px;
+}
+
+#login{
+    border-bottom: 2px solid black;
+    width:317px;
+    padding:12px;
+    margin-left:0%;
+    font-size: 18px;
+    font-weight: bold;
+    font: 0;
+    border-radius: 10px;
+}
+
+#login:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    cursor: pointer;
+    background-color: darkslategray;
+    color: white;
+}
+
+#addrs{
+    font-size: 12px;
+    margin-left: -35%;
+}
+#e,#pas{
+    color: rgb(96, 223, 96);
+    font-size:20px;
+}

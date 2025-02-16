@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addtocart.css">
+    <script src="https://kit.fontawesome.com/de7ee99fd5.js" crossorigin="anonymous">
+    </script>
+    <title>Shopping Cart</title>
+    </head>
+    <body>
+        <form action="addtocart.php" method="post">
+        <tr><td><div id="sc1">
+        <h2 id="sc">Shopping Cart</h2>
+
+        <ul id="cart-list"></ul><br>
+        <h2 id="tmi1">Total: Rs. <span id="total">0</span>/-</h2></td></tr>
+        </div>
+        <tr><td><input type="hidden" name="cartData" id="cartData"></td></tr>
+        <tr><td><input type="submit" value="Buy Now" id="bn"></td></tr>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var cartList = document.getElementById('cart-list');
+            var totalElement = document.getElementById('total');
+
+            // Retrieve cart data from local storage
+            var storedCart = localStorage.getItem('cart');
+            var cart = storedCart ? JSON.parse(storedCart) : [];
+            
+            // Populate the cart list
+            cart.forEach(item => {
+                var listItem = document.createElement('li');
+                var image = document.createElement('img');
+                image.src = item.imageSrc;
+                image.alt = item.productName;
+                image.style.width = '50px'; // Set the desired width
+                image.style.height = '50px'; // Set the desired height
+                listItem.appendChild(image);
+                listItem.innerHTML += `${item.productName} - Rs. ${item.price}/-`;
+                cartList.appendChild(listItem);
+            });
+
+            // Display the total
+            var total = cart.reduce((acc, item) => acc + item.price, 0);
+            totalElement.textContent = total;
+
+            document.getElementById('cartData').value = JSON.stringify(cart);
+
+            // Optional: If you want to clear the cart after displaying it
+            localStorage.removeItem('cart');
+        });
+    </script>
+</body>
+</html>

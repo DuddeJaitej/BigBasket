@@ -1,0 +1,49 @@
+body{
+    font-family: optima, cambria;
+    background-color: blueviolet;
+}
+h1{
+    font-size:35px;
+    color:aliceblue;
+}
+h2{
+    font-size:30px;
+    color:aliceblue;
+    margin-right: 30%;
+}
+#f,#e,#p,#c,#s,#ct,#d,#pi{
+    font-size:18px;
+    color:aquamarine;
+    margin:10px;
+}
+input{
+    width:250px;
+    height:26px;
+    font-size: 14px;
+    margin:10px;
+}
+#ptm{
+    width:260px;
+    height: 28px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left:10px;
+}
+#bn{
+    width: 210px;
+    height: 40px;
+    cursor:pointer;
+    font-size:22px;
+    border:2px solid lightblue;
+    background-color: blue;
+    color:aliceblue;
+}
+#bn:hover{
+    font-size: 21px;
+    background-color: lightblue;
+    color:blue;
+    border:2px solid blue;
+}
+#tmi{
+    margin-right:35%;
+}

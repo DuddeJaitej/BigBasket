@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto+Mono:wght@300&display=swap');
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 0%;
+    padding-bottom: 5%;
+    padding-top: 4%;
+    background-color: rgb(234, 255, 232);
+    background-image: radial-gradient(rgba(234, 255, 232));
+}
+
+/* .container{
+
+
+    height: 100%;
+    width: 100%;
+    background-color:bisque ;
+    box-shadow: #000 0px 10px 11px 0px;
+    font-family: 'Raleway', sans-serif;
+
+} */
+/* header{
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+} */
+
+.card{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 50px;
+    background: url(wp9998853-tomato-4k-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.card .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card:hover .overlay{opacity: 1;}
+
+.tomato{
+    font-family: 'Roboto Mono', monospace;
+    position: absolute;
+    left: 70px;
+    top: 55%;
+    font-size: 20px;
+    color:blue;
+}
+
+
+
+#addToCart1{
+    position: absolute;
+    left: 68px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+#addToCart1:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition:all 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* .card .btn1{
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    color: #fff;
+    border: 2px #fff solid;
+    letter-spacing: 1px;
+    border-radius: 8px;
+} */
+
+.card .btn1:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* .card .btn1, .card .h1{
+     transition: 0.3s;
+     transform: translateY(-20px);
+} */
+
+/* .card:hover .btn1, .card:hover .h1{
+    transform: translateY(0);
+} */
+
+.card2{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 400px;
+    margin-top: -27.9%;
+    background: url(wp7253201-onions-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+.onions{
+    font-family: 'Roboto Mono', monospace;
+
+    position: absolute;
+    left: 420px;
+    top: 55%;
+    font-size: 20px;
+    color:blue;
+}
+
+#addToCart2{
+    position: absolute;
+    left: 415px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+#addToCart2:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card2 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card2 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card2 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card2:hover .overlay{opacity: 1;}
+
+
+.card3{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 755px;
+    margin-top: -27.7%;
+    background: url(wp4309869-garlic-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.garlic{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 780px;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart3{
+    position: absolute;
+    left: 770px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+    border: 1px solid white;
+}
+
+#addToCart3:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.card3 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card3 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card3 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card3:hover .overlay{opacity: 1;}
+
+
+.card4{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 1100px;
+    margin-top: -27.9%;
+    background: url(wp9327759-green-chilli-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.greenchilli{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 1120px;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart4{
+    position: absolute;
+    left: 1119.5px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+    
+    border: 1px solid white;
+}
+
+#addToCart4:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card4 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card4 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card4 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card4:hover .overlay{opacity: 1;}
+
+.card5{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 50px;
+    margin-top: 5%;
+    background: url(wp3145595-fresh-spinach-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.spinach{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 70px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart5{
+    position: absolute;
+    left: 67px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+
+    border: 1px solid white;
+}
+
+#addToCart5:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card5 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card5 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card5 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card5:hover .overlay{opacity: 1;}
+
+
+
+.card6{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 400px;
+    margin-top: -27.7%;
+    background: url(wp4159429-cabbage-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.cabbage{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 420px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart6{
+    position: absolute;
+    left: 420px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+  
+    border: 1px solid white;
+}
+
+#addToCart6:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card6 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card6 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card6 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card6:hover .overlay{opacity: 1;}
+
+
+.card7{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 757px;
+    margin-top: -27.8%;
+    background: url(wp2473648-potatoes-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.potato{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 780.5px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart7{
+    position: absolute;
+    left: 775px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+   
+    border: 1px solid white;
+}
+
+#addToCart7:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card7 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card7 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card7 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card7:hover .overlay{opacity: 1;}
+
+
+.card8{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 1110px;
+    margin-top: -27.8%;
+    background: url(wp10276571-bitter-gourd-wallpapers.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.bitter{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 1130px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart8{
+    position: absolute;
+    left: 1125px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(0, 104, 0);
+ 
+    border: 1px solid white;
+}
+
+#addToCart8:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card8 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(0, 148, 0, 0.658);
+}
+
+.card8 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card8 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+ 
+}
+.card8:hover .overlay{
+    opacity: 1;
+}
+
+.adding{
+    background-color:lightblue;
+    padding:10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sc{
+    font-size:40px;
+    color:firebrick;
+}
+
+#viewCartButton{
+    width: 20%;
+    height:40px;
+    color:forestgreen;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:18px;
+}
+#viewCartButton:hover{
+    background-color: darkolivegreen;
+    color:white;
+    border:1px solid white;
+    transform:skewX(100px);
+}
+
+
+#cart-list{
+    text-decoration: none;
+    font-size:20px;
+    background-color: white;
+    border:1px solid seagreen;
+    margin-right: 60%;
+    list-style:none;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color:darkslategray;
+    font-weight: bold;
+}
+
+#T{
+    font-size: 20px;
+    font-weight: bold;
+}

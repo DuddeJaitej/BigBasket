@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(234, 255, 232);
+}
+
+h2{
+    font-size: 80px;
+    color:green;
+
+}
+
+p{
+    font-size: 30px
+}
+
+.link{
+    position: absolute;
+    font-size: 25px;
+    text-decoration: none;
+    padding:10px;
+    background-color: lightcoral;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.link:hover{
+    background-color: lightsalmon;
+    color:white;
+}
+
+.vod{
+    font-size: 25px;
+    margin-left:16%;
+    padding:10px;
+    background-color: lightcoral;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: 2px solid white;
+}
+.vod:hover{
+    background-color: lightsalmon;
+    color:white;
+}

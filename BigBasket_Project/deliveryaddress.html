@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Address</title>
+    <link rel="stylesheet" href="deliveryaddress.css">
+    <script>
+        function valid(){
+            const fullname = document.getElementById('fn').value;
+            const email = document.getElementById('em').value;
+            const emx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const ph = document.getElementById('pn').value;
+            const country = document.getElementById('cu').value;
+            const state = document.getElementById('st').value;
+            const city = document.getElementById('ci').value;
+            const door = document.getElementById('dn').value;
+            const doorx = /^[0-9A-Za-z\-\/.]+$/;
+            const pi = document.getElementById('pin').value;
+            const pay = document.getElementById('ptm').value;
+            
+        
+            if(fullname == null || fullname.trim() == ""){
+                document.getElementById('f1').innerHTML="Null Spaces not Allowed";
+                return false;
+            }
+            else if(fullname.length < 3){
+                document.getElementById('f1').innerHTML="Length should be more then 2";
+                return false;
+            }
+            else if(!isNaN(fullname)){
+                document.getElementById('f1').innerHTML="Numbers not Allowed";
+                return false;
+            }else{
+                document.getElementById('f1').innerHTML="";
+                
+            }
+
+            if(email == null || email.trim() == ""){
+                document.getElementById('e1').innerHTML="Null Spaces not Allowed";
+                return false;
+            }
+            else if(!emx.test(email)){
+                document.getElementById('e1').innerHTML="Enter correct email";
+                return false;
+            }else{
+                document.getElementById('e1').innerHTML="";
+                
+            }
+
+            if(ph == null || ph.trim() == ""){
+                document.getElementById('p1').innerHTML="Null Spaces not Allowed";
+                return false;
+            }
+            else if(isNaN(ph)){
+                document.getElementById('p1').innerHTML="Characters not Allowed";
+                return false;
+            }
+            else if(ph.length < 10 || ph.length > 10){
+                document.getElementById('p1').innerHTML="Numbers should be 10";
+                return false;
+            }else{
+                document.getElementById('p1').innerHTML="";
+                
+            }
+
+            if(country == null || country.trim() == ""){
+                document.getElementById('c1').innerHTML="Null Spaces not Allowed";
+                return false;
+            }
+            else if(!isNaN(country)){
+                document.getElementById('c1').innerHTML="Numbers not Allowed";
+                return false;
+            }
+            else if(country.length < 3){
+                document.getElementById('c1').innerHTML="Enter Full name of country";
+                return false;
+            }else{
+                document.getElementById('c1').innerHTML="";
+                
+            }
+
+            if(state == null || state.trim() == ""){
+                document.getElementById('s1').innerHTML="Null Spaces not Allowed";
+                return false;
+            }
+            else if(!isNaN(state)){
+                document.getElementById('s1').innerHTML="Numbers not Allowed";
+                return false;
+            }
+            else if(state.length < 3){
+                document.getElementById('s1').innerHTML="Enter Full name of state";
+                return false;
+            }else{
+                document.getElementById('s1').innerHTML="";
+                
+            }
+
+            if(city == null || city.trim() == ""){
+                document.getElementById('ct1').innerHTML="Null Spaces not Allowed";
+                return false;
+            }
+            else if(!isNaN(city)){
+                document.getElementById('ct1').innerHTML="Numbers not Allowed";
+                return false;
+            }
+            else if(city.length < 3){
+                document.getElementById('ct1').innerHTML="Enter Full name of city";
+                return false;
+            }else{
+                document.getElementById('ct1').innerHTML="";
+                
+            }
+
+            if(door == null || door.trim() == ""){
+                document.getElementById('d1').innerHTML="Null spaces not Allowed";
+                return false;
+            }
+            else if(!doorx.test(door)){
+                document.getElementById('d1').innerHTML="Include -, /, . in bitween door number";
+                return false;
+            }else{
+                document.getElementById('d1').innerHTML="";
+                
+            }
+
+            if(pi  == null || pi.trim() == ""){
+                document.getElementById('pi1').innerHTML="Null spaces not Allowed";
+                return false;
+            }
+            else if(isNaN(pi)){
+                document.getElementById('pi1').innerHTML="Characters not Allowed";
+                return false;
+            }else{
+                document.getElementById('pi1').innerHTML="";
+                
+            }
+
+            if(ptm  == null || ptm.trim() == ""){
+                document.getElementById('ptm1').innerHTML="Null spaces not Allowed";
+                return false;
+            }
+            else if(!isNaN(ptm)){
+                document.getElementById('ptm1').innerHTML="Numbers not Allowed";
+                return false;
+            }else{
+                document.getElementById('ptm1').innerHTML="";
+                
+            }
+
+            return true;
+        }
+    </script>
+    <style>
+        #f1,#e1,#p1,#c1,#s1,#ct1,#d1,#pi1{
+            font-size:18px;
+            color:red;
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="deliveryaddress.php" onsubmit="return valid()" method="post">
+        <table align="center">
+        <tr><th><h1 id="eda">Delivery Address</h1></th></tr>
+        
+        <div id="addressdetails">
+            <tr><td><span id="f">FullName: <br><input type="text" name="fullname" id="fn"></span><br>
+            <span id="f1"></span></td>
+
+            <td><span id="e">Email: <br><input type="email" name="email" id="em"></span><br>
+            <span id="e1"></span></td></tr>
+
+            <tr><td><span id="p">PhoneNo: <br><input type="tel" name="phoneno" id="pn"></span><br>
+            <span id="p1"></span></td>
+
+            <td><span id="c">Country: <br><input type="text" name="country" id="cu"></span><br>
+            <span id="c1"></span></td></tr>
+
+            <tr><td><span id="s">State: <br><input type="text" name="state" id="st"></span><br>
+            <span id="s1"></span></td>
+            <td><span id="ct">City: <br><input type="text" name="city" id="ci"></span><br>
+            <span id="ct1"></span></td></tr>
+
+            <tr><td><span id="d">DoorNo: <br><input type="text" name="doorno" id="dn">
+            </span><br>
+            <span id="d1"></span></td>
+            <td><span id="pi">PinNo: <br><input type="text" name="pinno" id="pin"></span><br>
+            <span id="pi1"></span></td></tr>
+        </div>
+        
+        <tr><td><button type="submit" id="bn">Buy Now</button></td></tr>
+        </table>
+    </form>
+</body>
+</html>

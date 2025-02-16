@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login1.css" type="text/css">
+    <title>Signup</title>
+    <script>
+        function signup(){
+            const email = document.getElementById("mail").value;
+            const emailx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const password = document.getElementById("pass").value;
+            
+
+            if(email == null || email.trim() == ""){
+                document.getElementById("e1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(!emailx.test(email)){
+                document.getElementById("e1").innerHTML="Enter correct email";
+                return false;
+            }else{
+                document.getElementById("e1").innerHTML="";
+            }
+
+            if(password == null || password.trim() == ""){
+                document.getElementById("pas1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(password.length < 8){
+                document.getElementById("pas1").innerHTML="Length should be more then 7";
+                return false;
+            }else{
+                document.getElementById("pas1").innerHTML="";
+            }
+            return true;
+        }
+    </script>
+    <style>
+        #e1,#pas1{
+            color:red;
+        }
+        p{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form action="login1.php" onsubmit="return signup()" method="post">
+    <div class="container3">
+        <div class="subcont2">
+            <h1>Login</h1>
+            
+            <span id="e">Email: </span>
+            <input type="email" id="mail" name="email" placeholder="Enter Your Email">
+            <span id="e1"></span>
+
+            <span id="pas">Password: </span>
+            <input type="password" id="pass" name="password" placeholder="Enter Your Password">
+            <span id="pas1"></span>
+
+                     
+            <br><br><input type="submit" id="login" value="Login"><br>
+            <p>Not a <a style="color:greenyellow" href="signup.html">member?</a></p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

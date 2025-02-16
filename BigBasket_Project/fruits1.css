@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto+Mono:wght@300&display=swap');
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    padding: 0%;
+    padding-bottom: 5%;
+    padding-top: 4%;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 50px;
+    background: url(apple.jpeg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.card .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card:hover .overlay{opacity: 1;}
+
+.apple{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 70px;
+    top: 55%;
+    font-size: 20px;
+}
+
+
+
+#addToCart1{
+    position: absolute;
+    left: 69.5px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart1:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card .btn1:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+.card2{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 410px;
+    margin-top: -27.8%;
+    background: url(orange.jpeg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+.orange{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 430px;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart2{
+    position: absolute;
+    left: 430px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart2:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card2 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card2 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card2 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card2:hover .overlay{opacity: 1;}
+
+
+.card3{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 777px;
+    margin-top: -27.8%;
+    background: url(banana.jpeg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.banana{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 800px;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart3{
+    position: absolute;
+    left: 795px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart3:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.card3 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card3 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card3 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card3:hover .overlay{opacity: 1;}
+
+
+.card4{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 1140px;
+    margin-top: -27.8%;
+    background: url(guava.jpeg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.guava{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 1160px;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart4{
+    position: absolute;
+    left: 1160px;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart4:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card4 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card4 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card4 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card4:hover .overlay{opacity: 1;}
+
+.card5{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 50px;
+    margin-top: 5%;
+    background: url(dragon.jpeg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.dragon{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 70px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart5{
+    position: absolute;
+    left: 70px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart5:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card5 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card5 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card5 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card5:hover .overlay{opacity: 1;}
+
+
+
+.card6{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 410px;
+    margin-top: -27.8%;
+    background: url(pineapple.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.pineapple{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 430px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart6{
+    position: absolute;
+    left: 427px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart6:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card6 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card6 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card6 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card6:hover .overlay{opacity: 1;}
+
+
+.card7{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 780px;
+    margin-top: -27.8%;
+    background: url(avacado.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.avacado{
+    font-family: 'Roboto Mono', monospace;
+    color:blue;
+    position: absolute;
+    left: 800px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart7{
+    position: absolute;
+    left: 800px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart7:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card7 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card7 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card7 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card7:hover .overlay{opacity: 1;}
+
+
+.card8{
+    width: 20em;
+    height: 25em;
+    position: relative;
+    margin: 0 1em;
+    margin-left: 1140px;
+    margin-top: -27.8%;
+    background: url(strawberries.jpg) center;
+    background-size: cover;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: #000 0px 11px 15px 0px;
+}
+
+.strawberry{
+    font-family: 'Roboto Mono', monospace;
+    color: blue;
+    position: absolute;
+    left: 1160px;
+    margin-top: 34%;
+    top: 55%;
+    font-size: 20px;
+}
+
+#addToCart8{
+    position: absolute;
+    left: 1160px;
+    margin-top: 32.5%;
+    top: 62%;
+    width: 300px;
+    height: 30px;
+    background-color: #BE716B;
+    border: 1px solid white;
+}
+
+#addToCart8:hover{
+    box-shadow: #000 0px 3px 5px 0px;
+    transform: scale(0.9);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card8 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -0.06em;
+    margin-top: -0.1em;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 12px;
+    background-color: rgba(255, 123, 0, 0.8);
+}
+
+.card8 .overlay h2{
+    position: absolute;
+
+    top: 10px;
+}
+
+.card8 .overlay p{
+    position: absolute;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 50px;
+
+}
+.card8:hover .overlay{opacity: 1;}
+
+.adding{
+    background-color:lightblue;
+    padding:10%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sc{
+    font-size:40px;
+    color:firebrick;
+}
+
+#viewCartButton{
+    width: 20%;
+    height:40px;
+    color:forestgreen;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:18px;
+}
+#viewCartButton:hover{
+    background-color: darkolivegreen;
+    color:white;
+    border:1px solid white;
+    transform:skewX(100px);
+}
+
+
+#cart-list{
+    text-decoration: none;
+    font-size:20px;
+    background-color: white;
+    border:1px solid seagreen;
+    margin-right: 60%;
+    list-style:none;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color:darkslategray;
+    font-weight: bold;
+}
+
+#T{
+    font-size: 20px;
+    font-weight: bold;
+}

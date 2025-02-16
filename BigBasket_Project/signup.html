@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css" type="text/css">
+    <title>Signup</title>
+    <script>
+        function signup(){
+            const fname = document.getElementById("fullname").value;
+            const email = document.getElementById("mail").value;
+            const emailx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const password = document.getElementById("pass").value;
+            const confirmp = document.getElementById("retype").value;
+            const mobile = document.getElementById("num").value;
+            const dob = document.getElementById("dob").value;
+            
+            if(fname == null || fname.trim() == ""){
+                document.getElementById("fn1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(fname.length < 3){
+                document.getElementById("fn1").innerHTML="Length should be more then 2";
+                return false;
+            }else if(!isNaN(fname)){
+                document.getElementById("fn1").innerHTML="Number not Allowed";
+                return false;
+            }else{
+                document.getElementById("fn1").innerHTML="";
+            }
+
+            if(email == null || email.trim() == ""){
+                document.getElementById("e1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(!emailx.test(email)){
+                document.getElementById("e1").innerHTML="Enter correct email";
+                return false;
+            }else{
+                document.getElementById("e1").innerHTML="";
+            }
+
+            if(password == null || password.trim() == ""){
+                document.getElementById("pas1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(password.length < 8){
+                document.getElementById("pas1").innerHTML="Length should be more then 7";
+                return false;
+            }else{
+                document.getElementById("pas1").innerHTML="";
+            }
+
+            if(confirmp == null || confirmp.trim() == ""){
+                document.getElementById("cp1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(confirmp != password){
+                document.getElementById("cp1").innerHTML="Plese Match the password";
+                return false;
+            }else{
+                document.getElementById("cp1").innerHTML="";
+            }
+
+            if(mobile == null || mobile.trim() == ""){
+                document.getElementById("mn1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else if(isNaN(mobile)){
+                document.getElementById("mn1").innerHTML="Characters not Allowed";
+                return false;
+            }else if(mobile.length != 10){
+                document.getElementById("mn1").innerHTML="Length should be 10";
+                return false;
+            }else{
+                document.getElementById("mn1").innerHTML="";
+            }
+
+            if(dob == null || dob.trim() == ""){
+                document.getElementById("do1").innerHTML="Null spaces not Allowed";
+                return false;
+            }else{
+                document.getElementById("do1").innerHTML="";
+            }
+            return true;
+        }
+    </script>
+    <style>
+        #fn1,#e1,#pas1,#cp1,#mn1,#do1{
+            color:red;
+        }
+        p{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <form action="signup.php" onsubmit="return signup()" method="post">
+    <div class="container3">
+        <div class="subcont2">
+            <h1>SignUp</h1>
+            <br><span id="fn">FullName: </span>
+            <input type="text" id="fullname" name="fname" placeholder="Enter Your Full Name">
+            <span id="fn1"></span>
+
+            <span id="e">Email: </span>
+            <input type="email" id="mail" name="email" placeholder="Enter Your Email">
+            <span id="e1"></span>
+
+            <span id="pas">Password: </span>
+            <input type="password" id="pass" name="password" placeholder="Enter Your Password">
+            <span id="pas1"></span>
+
+            <span id="cp">ConfirmPassword</span>
+            <input type="password" id="retype" name="confirmp" placeholder="Retype your password">
+            <span id="cp1"></span>
+
+            <span id="mn">MobileNumber</span>
+            <input type="tel" id="num" name="Mobile" placeholder="Enter Your Number">
+            <span id="mn1"></span>
+
+            <span id="do">DateofBirth:</span>
+            <input type="date" id="dob" name="dateob" placeholder="Enter Your Date of Birth">
+            <span id="do1"></span>
+
+                     
+            <br><br><input type="submit" id="register" value="Signup"><br>
+            <p>Already a <a style="color:greenyellow" href="login.html">member</a></p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

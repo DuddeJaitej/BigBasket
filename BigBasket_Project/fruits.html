@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fruits1.css">
+    <title>Fruits</title>
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <!-- <h1>Fruits</h1> -->
+        <div class="card">
+            <div class="overlay">
+                <!--Apple-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 95
+                    <br>
+                    Fiber - 4.4G
+                    <br>
+                    Protien - 0.8G
+                    <br>
+                    Carbs - 25.1G
+                    <br>
+                    Fat - 0.3G
+                </p>
+                <!-- <a href="vegetable.html" class="btn1" >View More</a> -->
+            </div>
+        </div>
+        <br>
+        <h3 class="apple ">Apple - 1KG : Rs. 27/-</h3>
+        <input type="button" id="addToCart1" value="Add To Cart">
+        <div class="card2">
+            <div class="overlay">
+
+                <!--Orange-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 65
+                    <br>
+                    Fiber - 4G
+                    <br>
+                    Protien - 1G
+                    <br>
+                    Carbs - 16G
+                    <br>
+                    Fat - 0.3G
+                </p>
+            </div>
+        </div>
+        <br>
+        <h3 class="orange">Orange - 1KG : Rs. 35/-</h3>
+        <input type="button" id="addToCart2" value="Add To Cart">
+
+        <div class="card3">
+            <div class="overlay">
+
+                <!--Banana-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 105
+                    <br>
+                    Fiber - 3.1G
+                    <br>
+                    Protien - 1.3G
+                    <br>
+                    Carbs - 27G
+                    <br>
+                    Fat - 0.4G
+                </p>
+            </div>
+        </div>
+        <br>
+        <h3 class="banana">Banana - 1KG : Rs. 40/-</h3>
+        <input type="button" id="addToCart3" value="Add To Cart">
+        
+        <div class="card4">
+            <div class="overlay">
+
+                <!--Guava-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 112
+                    <br>
+                    Fiber - 8.9G
+                    <br>
+                    Protien - 4.2G
+                    <br>
+                    Carbs - 23.6G
+                    <br>
+                    Fat - 1.6G
+                </p>
+            </div>
+        </div>
+        <br>
+        <h3 class="guava">Guava - 1KG : Rs. 50/-</h3>
+        <input type="button" id="addToCart4" value="Add To Cart">
+        <div class="card5">
+            <div class="overlay">
+                <!--Dragon-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 102
+                    <br>
+                    Fiber - 5G
+                    <br>
+                    Protien - 2G
+                    <br>
+                    Carbs - 22G
+                    <br>
+                    Fat - 0G
+                </p>
+            </div>
+        </div>
+        <br><h3 class="dragon">Dragon Fruit-1KG:Rs.15/-</h3>
+        <input type="button" id="addToCart5" value="Add To Cart">
+        <div class="card6">
+            <div class="overlay">
+                <!--Pineappke-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 82
+                    <br>
+                    Fiber - 2.4G
+                    <br>
+                    Protien - 0.9G
+                    <br>
+                    Carbs - 22G
+                    <br>
+                    Fat - 0.2G
+                </p>
+            </div>
+        </div>
+        <br><h3 class="pineapple">Pineapple -1KG: Rs.38/-</h3>
+        <input type="button" id="addToCart6" value="Add To Cart">
+        <div class="card7">
+            <div class="overlay">
+                <!--Avacado-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 160
+                    <br>
+                    Fiber - 6.7G
+                    <br>
+                    Protien - 2G
+                    <br>
+                    Carbs - 8.5G
+                    <br>
+                    Fat - 14.7G
+                </p>
+            </div>
+        </div>
+        <br><h3 class="avacado">Avacado - 1KG : Rs. 32/-</h3>
+        <input type="button" id="addToCart7" value="Add To Cart">
+        <div class="card8">
+            <div class="overlay">
+                <!--Strawberry-->
+                <h2>Nutrition Content :</h2>
+
+                <p>Calories - 49
+                    <br>
+                    Fiber - 3G
+                    <br>
+                    Protien - 1G
+                    <br>
+                    Carbs - 11.7G
+                    <br>
+                    Fat - 0.5G
+                </p>
+            </div>
+        </div>
+        <h3 class="strawberry">Strawberries-1KG:Rs.40/-</h3>
+        <input type="button" id="addToCart8" value="Add To Cart">
+    <!-- </div> -->
+    <br>
+    <br>
+    <br>
+    <div class="adding">
+        <h2 id="sc">Shopping Cart</h2>
+        <!-- Cart list and total display -->
+        <div id="cart-list"></div>
+        <p id="T">Total: Rs. <span id="total">0</span>/-</p>
+        <button id="viewCartButton">View Cart</button>
+        </div>
+        <script src="https://kit.fontawesome.com/de7ee99fd5.js" crossorigin="anonymous"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Function to add Tomato to the cart
+                document.getElementById('addToCart1').addEventListener('click', function() {
+                    addToCart('Apple', 27,'apple.jpeg');
+                });
+        
+                // Repeat the above pattern for other items (onions, garlic, mirchi, spinach, cabbage, potato, bitter gourd)
+        
+                document.getElementById('addToCart2').addEventListener('click', function() {
+                    addToCart('Orange', 35,'orange.jpeg');
+                });
+        
+                document.getElementById('addToCart3').addEventListener('click', function() {
+                    addToCart('Banana', 40, 'banana.jpeg');
+                });
+    
+                document.getElementById('addToCart4').addEventListener('click', function() {
+                    addToCart('Guava', 50, 'guava.jpeg');
+                });
+    
+                document.getElementById('addToCart5').addEventListener('click', function() {
+                    addToCart('Dragon Fruit', 15, 'dragon.jpeg');
+                });
+    
+                document.getElementById('addToCart6').addEventListener('click', function() {
+                    addToCart('Pineapple', 38, 'pineapple.jpg');
+                });
+    
+                document.getElementById('addToCart7').addEventListener('click', function() {
+                    addToCart('Avacado ', 32, 'avacado.jpg');
+                });
+    
+                document.getElementById('addToCart8').addEventListener('click', function() {
+                    addToCart('Strawberries', 40, 'strawberries.jpg');
+                });
+    
+                function goToCart() {
+                    window.location.href = 'addtocart.html';
+                }
+    
+                // Attach the click event to a hypothetical "View Cart" button
+                document.getElementById('viewCartButton').addEventListener('click', goToCart);
+            });
+    
+            // Initialize the cart array
+            var cart = [];
+    
+            // Function to add an item to the cart
+            function addToCart(productName, price, imageSrc) {
+                    cart.push({ productName, price, imageSrc });
+                    updateCartDisplay();
+                }
+    
+            // Function to update the cart display
+            function updateCartDisplay() {
+                var cartList = document.getElementById('cart-list');
+                var totalElement = document.getElementById('total');
+    
+                // Clear the previous content
+                cartList.innerHTML = '';
+    
+                // Populate the cart list
+                cart.forEach(item => {
+                        var listItem = document.createElement('li');
+                        var image = document.createElement('img');
+                        image.src = item.imageSrc;
+                        image.alt = item.productName;
+                        image.style.width = '150px'; // Set the desired width
+                        image.style.height = '100px';
+                        listItem.appendChild(image);
+                        listItem.innerHTML += `${item.productName} - Rs. ${item.price}/-`;
+                        cartList.appendChild(listItem);
+                    });
+    
+                // Calculate and display the total
+                var total = cart.reduce((acc, item) => acc + item.price, 0);
+                totalElement.textContent = total;
+    
+               
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+            
+        </script>
+</body>
+</html>
